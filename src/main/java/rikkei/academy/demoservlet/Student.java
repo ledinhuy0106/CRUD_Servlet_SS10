@@ -4,6 +4,7 @@ public class Student {
     private int id;
     private  String name;
     private  int age;
+     private String image;
 
     public Student() {
     }
@@ -12,6 +13,21 @@ public class Student {
         this.id = id;
         this.name = name;
         this.age = age;
+    }
+
+    public Student(int id, String name, int age, String image) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.image = image;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public int getId() {
