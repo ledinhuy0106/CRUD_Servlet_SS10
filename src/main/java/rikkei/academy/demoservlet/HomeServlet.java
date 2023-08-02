@@ -62,8 +62,9 @@ public class HomeServlet extends HttpServlet {
                 // thêm mới
                 String name = req.getParameter("name");
                 String age = req.getParameter("age");
+                String image = req.getParameter("image");
                 int newId = getNewId();
-                list.add(new Student(newId, name, Integer.parseInt(age)));
+                list.add(new Student(newId, name, Integer.parseInt(age),image));
                 showListStudent(req, resp);
                 break;
             case "EDIT":
